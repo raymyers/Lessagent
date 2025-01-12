@@ -4,4 +4,18 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "anthropic>=0.42.0",
+    "datasets>=3.2.0",
+    "jsonlines>=4.0.0",
+    "libcst>=1.6.0",
+    "llama-index>=0.12.10",
+    "openai>=1.59.6",
+    "pre-commit>=4.0.1",
+    "swebench",
+    "tiktoken>=0.8.0",
+    "typer>=0.15.1",
+]
+
+[tool.uv.sources]
+swebench = { git = "https://github.com/princeton-nlp/SWE-bench" }
